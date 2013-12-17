@@ -94,22 +94,22 @@ and restart litecoind:
     rpcport=10332
     port=10333
 
-Notes for Feathercoin:
+Notes for Phoenixcoin:
 =========================
 Requirements:
 -------------------------
-In order to run P2Pool with the Feathercoin network, you would need to build and install the
+In order to run P2Pool with the Phoenixcoin network, you would need to build and install the
 ltc_scrypt module that includes the scrypt proof of work code that Litecoin uses for hashes.
 
 See "Notes for Litecoin" above on how to install the ltc_script module.
 
 Running P2Pool:
 -------------------------
-Run P2Pool with the "--net feathercoin" option.
+Run P2Pool with the "--net phoenixcoin" option.
 Run your miner program, connecting to 127.0.0.1 on port 19327.
-Forward port 19339 to the host running P2Pool.
+Forward port 19339 to the host running phoenixcoind.
 
-Feathercoin's use of ports could conflicts with P2Pool running on one of
+Phoenixcoin's use of ports could conflicts with P2Pool running on one of
 the Cryptocoin networks. To avoid problems, add these lines to litecoin.conf
 and restart litecoind:
 
