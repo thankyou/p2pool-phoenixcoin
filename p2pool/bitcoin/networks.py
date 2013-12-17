@@ -200,7 +200,7 @@ nets = dict(
         DUST_THRESHOLD=0.03e8,
     ),
     phoenixcoin=math.Object(
-        P2P_PREFIX='fbc0b6db'.decode('hex'),
+        P2P_PREFIX='ffc4badf'.decode('hex'),
         P2P_PORT=9555,
         ADDRESS_VERSION=56,
         RPC_PORT=9554,
