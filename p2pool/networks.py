@@ -139,6 +139,24 @@ nets = dict(
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: True,
     ),
+    phoenixcoin=math.Object(     
+        PARENT=networks.nets['phoenixcoin'],
+        SHARE_PERIOD=18, # seconds
+        CHAIN_LENGTH=60*60//10, # shares
+        REAL_CHAIN_LENGTH=60*60//10, # shares
+        TARGET_LOOKBEHIND=200, # shares
+        SPREAD=120, # blocks
+        IDENTIFIER='4665617468657221'.decode('hex'), #<< to change
+        PREFIX='b131010ba6d4729a'.decode('hex'), #<< to change
+        P2P_PORT=19449,
+        MIN_TARGET=0,
+        MAX_TARGET=2**256//2**20 - 1,
+        PERSIST=False,
+        WORKER_PORT=19437,
+        BOOTSTRAP_ADDRS='95.85.32.214'.split(' '),
+        ANNOUNCE_CHANNEL='#p2pool-alt',
+        VERSION_CHECK=lambda v: True,
+    ),
 
 )
 for net_name, net in nets.iteritems():
