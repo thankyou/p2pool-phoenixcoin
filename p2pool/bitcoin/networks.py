@@ -202,7 +202,7 @@ nets = dict(
     phoenixcoin=math.Object(
         P2P_PREFIX='fbc0b6db'.decode('hex'),
         P2P_PORT=9555,
-        ADDRESS_VERSION=14,
+        ADDRESS_VERSION=56,
         RPC_PORT=9554,
         RPC_CHECK=defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
             'phoenixcoinaddress' in (yield bitcoind.rpc_help()) and
