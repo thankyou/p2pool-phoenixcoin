@@ -153,7 +153,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=True,
         WORKER_PORT=19437,
-        BOOTSTRAP_ADDRS='95.85.32.214'.split(' '),
+        BOOTSTRAP_ADDRS='95.85.32.214 146.185.129.175 atlas.phoenixcoin.org'.split(' '),
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: True,
     ),
